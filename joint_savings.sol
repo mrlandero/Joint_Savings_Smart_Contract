@@ -23,3 +23,14 @@ contract JointSavings {
     address public lastToWithdraw;
     uint public lastWithdrawAmount;
     uint public contractBalance;
+
+    function withdraw(uint amount, address payable recipient) public {
+        require(recipient == accountOne || recipient == accountTwo, "You don't own this account");
+        require(contractBalance > amount, "Insufficient Funds!");
+        if(lastToWithdraw != recipient){
+            lastToWithdraw = recipient;
+        }
+        recipient.transfer(amount);
+        lastWithdrawAmount = amount;
+        contractBalance = address(this).balance;
+    }
