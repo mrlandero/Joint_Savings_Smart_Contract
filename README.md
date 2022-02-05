@@ -157,4 +157,11 @@ Use the `lastWithdrawAmount` function, found in the interactive section of our s
 In the preceding image, we can see that under the `lastWithdrawAmount` function button, the value is 10000000000000000000. This means that we sent 10 ether to account2.<br>
 We can also verify the withdraw by using the `terminal` view. Here you can see the value of the withdrawal, as well as the account who received the funds.
 
-Great! It appears that our functions are doing exactly what we expect them to do. We are now able to fully interact with this `JointSavings` contract. 
+Great! It appears that our functions are doing exactly what we expect them to do. We are now able to fully interact with this `JointSavings` contract.
+
+---
+
+## Contributors
+
+**Created by:** Tony Landero<br>
+**Email:** mr.landero@gmail.com<br>
