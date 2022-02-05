@@ -35,3 +35,17 @@ We can see in the preceding image that once the contract is deployed, you can ve
 Furthermore, we can see the successful deployment of the contract below our code, in what we call the `terminal` view. 
 
 Great! Now that we have deployed our contract, let's start interacting with it. 
+
+Step 2: Set Accounts
+Use the `setAccounts` function, found in the interactive contract section in our sidebar, to assign adresses for both accounts in the `JointSavings` contract:
+
+![Set Accounts](Execution_Results/two_set_accounts.png)
+
+In the preceding image we can see the interaction taking place with our sidebar `setAccounts` function. In the `terminal` view, we can see the successful transaction execution, along with the confirmation that the addresses have been assigned. 
+
+Step 3: Deposit 1 Ether
+Use the `deposit` function, found in the interactive section in our sidebar, to deposit 1 ether into the contract:
+
+![Deposit 1 Ether](Execution_Results/three_deposit_1_ether.png)
+
+In the `Value` input box, type in 1 Ether, and then click on the `Deposit` function button. (You can also deposit as wei. The equivalent is 1000000000000000000 wei to 1 ether). Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information. 
