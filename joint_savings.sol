@@ -43,3 +43,6 @@ contract JointSavings {
         accountOne = account1;
         accountTwo = account2;
     }
+
+    function() external payable {}
+}
