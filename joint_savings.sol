@@ -34,3 +34,7 @@ contract JointSavings {
         lastWithdrawAmount = amount;
         contractBalance = address(this).balance;
     }
+
+    function deposit() public payable {
+        contractBalance = address(this).balance;
+    }
