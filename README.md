@@ -26,37 +26,38 @@ To use the 'Joint_Savings_Smart_Contract' application, simply clone the reposito
 
 Once the contract is deployed, interact with the contract by using the sidebar. You will see the functions that we have created in our contract. 
 
-Step 1: Deploy Contract\n
+Step 1: Deploy Contract<br>
 Once the Solidity Smart Contract is compiled, we have to deploy it in order to interact with it:
 
 ![Deploy Contract](Execution_Results/one_deploy_contract.png)
 
-We can see in the preceding image that once the contract is deployed, you can verify its deployment in one of two ways. First, below the `Deploy` button, you will find a tab labeled `Deployed Contracts`. Once you click on this tab, you will see the smart contract you deployed, along with all of the interactive functions for that contract.\n 
+We can see in the preceding image that once the contract is deployed, you can verify its deployment in one of two ways. First, below the `Deploy` button, you will find a tab labeled `Deployed Contracts`. Once you click on this tab, you will see the smart contract you deployed, along with all of the interactive functions for that contract.<br>
 Furthermore, we can see the successful deployment of the contract below our code, in what we call the `terminal` view. 
 
 Great! Now that we have deployed our contract, let's start interacting with it. 
 
-Step 2: Set Accounts\n
+Step 2: Set Accounts<br>
 Use the `setAccounts` function, found in the interactive contract section in our sidebar, to assign adresses for both accounts in the `JointSavings` contract:
 
 ![Set Accounts](Execution_Results/two_set_accounts.png)
 
-In the preceding image we can see the interaction taking place with our sidebar `setAccounts` function.\n
+In the preceding image we can see the interaction taking place with our sidebar `setAccounts` function.<br>
 In the `terminal` view, we can see the successful transaction execution, along with the confirmation that the addresses have been assigned. 
 
-Step 3: Deposit 1 Ether
+Step 3: Deposit 1 Ether<br>
 Use the `deposit` function, found in the interactive section in our sidebar, to deposit 1 ether into the contract:
 
 ![Deposit 1 Ether](Execution_Results/three_deposit_1_ether.png)
 
-In the `Value` input box, type in 1 Ether, and then click on the `Deposit` function button. (You can also deposit as wei. The equivalent is 1000000000000000000 wei to 1 ether). Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information. 
+In the `Value` input box, type in 1 Ether, and then click on the `Deposit` function button. (You can also deposit as wei. The equivalent is 1000000000000000000 wei to 1 ether).<br>
+Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information. 
 
-Step 4: Contract Balance after first deposit\n
+Step 4: Contract Balance after first deposit<br>
 Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the deposit was successful:
 
 ![Contract Balance](Execution_Results/four_contract_balance.png)
 
-In the preceding image, we can see that the contract balance is now 1000000000000000000 wei, which is equivalent to 1 ether.\n
+In the preceding image, we can see that the contract balance is now 1000000000000000000 wei, which is equivalent to 1 ether.<br>
 Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details. 
 
 Step 5: Deposit 10 Ether\n
@@ -90,3 +91,35 @@ In the preceding image, we can see that the contract balance is now 160000000000
 Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details.
 
 Great! Our `deposit` function is working like it should. 
+
+Step 9: Witdraw 5 Ether for account1<br>
+Use the `withdraw` function, found in the interactive section of our smart contract, to send 5 ether to the address associated with account1:
+
+![Withdraw 5 Ether](Execution_Results/nine_withdraw_5_ether.png)
+
+In the preceding image, we can see the input areas for this `withdraw` function. You send 5000000000000000000 wei. (When it comes to withdraws, or remittances, we must send the currency in wei). We also identify the address where this transaction is going.<br>
+Once the transaction is sent, you can verify its completion through the successfull message in the `terminal` view, along with the transaction details. 
+
+Step 10: Contract Balance after first withdraw<br>
+Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the withdrawal was successful:
+
+![Contract Balance](Execution_Results/ten_contract_balance.png)
+
+In the preceding image, we can see that the contract balance is now 11000000000000000000 wei, which is equivalent to 11 ether.<br>
+Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details.
+
+Step 11: Last to Withdraw after first withdrawal<br>
+Use the `lastToWithdraw` function, found in the interactive section of our smart contract, to verify the last account to withdraw from the smart contract:
+
+![Last to Withdraw](Execution_Results/eleven_last_to_withdraw.png)
+
+In the preceding image we can see that the last account to withdraw from the contract is the address ending in (...68Cb).<br>
+You can verify this information through the sidebar, or the `terminal` view stating a successfull transaction. The last person to withdraw is, in fact, the last to person to whom we sent currency.
+
+Step 12: Last Withdrawal Amount after first withdrawal<br>
+Use the `lastWithdrawAmount` function, found in the interactive section of our smart contract, to verify that the last amount withdrawn matches the last amount sent to the specific address:
+
+![Last Withdrawal Amount](Execution_Results/twelve_last_withdraw_amount.png)
+
+In the preceding image, we can see that under the `lastWithdrawAmount` function button, the value is 5000000000000000000. This means that we sent 5 ether to account1.<br>
+We can also verify the withdraw by using the `terminal` view. Here you can see the value of the withdrawal, as well as the account who received the funds. 
