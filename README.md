@@ -60,34 +60,35 @@ Use the `contractBalance` function, found in the interactive section of our cont
 In the preceding image, we can see that the contract balance is now 1000000000000000000 wei, which is equivalent to 1 ether.<br>
 Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details. 
 
-Step 5: Deposit 10 Ether\n
+Step 5: Deposit 10 Ether<br>
 Use the `deposit` function, found in the interactive section in our sidebar, to deposit 10 ether into the contract:
 
 ![Deposit 10 Ether](Execution_Results/five_deposit_10_ether.png)
 
-In the `Value` input box, type in 10 Ether, and then click on the `Deposit` function button. (You can also deposit as wei. The equivalent is 10000000000000000000 wei to 10 ether). Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information.
+In the `Value` input box, type in 10 Ether, and then click on the `Deposit` function button. (You can also deposit as wei. The equivalent is 10000000000000000000 wei to 10 ether).<br>
+Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information.
 
-Step 6: Contract Balance after second deposit\n
+Step 6: Contract Balance after second deposit<br>
 Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the deposit was successful:
 
 ![Contract Balance](Execution_Results/six_contract_balance.png)
 
-In the preceding image, we can see that the contract balance is now 11000000000000000000 wei, which is equivalent to 11 ether.\n
+In the preceding image, we can see that the contract balance is now 11000000000000000000 wei, which is equivalent to 11 ether.<br>
 Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details.
 
-Step 7: Deposit 5 Ether\n
+Step 7: Deposit 5 Ether<br>
 Use the `deposit` function, found in the interactive section in our sidebar, to deposit 5 ether into the contract:
 
 ![Deposit 5 Ether](Execution_Results/seven_deposit_5_ether.png)
 
-In the `Value` input box, type in 5 Ether, and then click on the `Deposit` function button. Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information.
+In the `Value` input box, type in 5 Ether, and then click on the `Deposit` function button.<br> Once the transaction is complete, you should receive a successful transaction message in the `terminal` view, along with the transaction information.
 
-Step 8: Contract Balance after third deposit\n
+Step 8: Contract Balance after third deposit<br>
 Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the deposit was successful:
 
 ![Contract Balance](Execution_Results/eight_contract_balance.png)
 
-In the preceding image, we can see that the contract balance is now 16000000000000000000 wei, which is equivalent to 16 ether.\n
+In the preceding image, we can see that the contract balance is now 16000000000000000000 wei, which is equivalent to 16 ether.<br>
 Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details.
 
 Great! Our `deposit` function is working like it should. 
@@ -100,7 +101,7 @@ Use the `withdraw` function, found in the interactive section of our smart contr
 In the preceding image, we can see the input areas for this `withdraw` function. You send 5000000000000000000 wei. (When it comes to withdraws, or remittances, we must send the currency in wei). We also identify the address where this transaction is going.<br>
 Once the transaction is sent, you can verify its completion through the successfull message in the `terminal` view, along with the transaction details. 
 
-Step 10: Contract Balance after first withdraw<br>
+Step 10: Contract Balance after first withdrawal<br>
 Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the withdrawal was successful:
 
 ![Contract Balance](Execution_Results/ten_contract_balance.png)
@@ -123,3 +124,37 @@ Use the `lastWithdrawAmount` function, found in the interactive section of our s
 
 In the preceding image, we can see that under the `lastWithdrawAmount` function button, the value is 5000000000000000000. This means that we sent 5 ether to account1.<br>
 We can also verify the withdraw by using the `terminal` view. Here you can see the value of the withdrawal, as well as the account who received the funds. 
+
+Step 13: Witdraw 10 Ether for account2<br>
+Use the `withdraw` function, found in the interactive section of our smart contract, to send 10 ether to the address associated with account2:
+
+![Withdraw 10 Ether](Execution_Results/thirteen_withdraw_10_ether.png)
+
+In the preceding image, we can see the input areas for this `withdraw` function. You send 10000000000000000000 wei. (When it comes to withdraws, or remittances, we must send the currency in wei). We also identify the address where this transaction is going.<br>
+Once the transaction is sent, you can verify its completion through the successfull message in the `terminal` view, along with the transaction details. 
+
+Step 14: Contract Balance after second withdrawal<br>
+Use the `contractBalance` function, found in the interactive section of our contract, to verify the balance of the contract to ensure the withdrawal was successful:
+
+![Contract Balance](Execution_Results/fourteen_contract_balance.png)
+
+In the preceding image, we can see that the contract balance is now 1000000000000000000 wei, which is equivalent to 1 ether.<br>
+Furthermore, you can see a successful transaction execution in the `terminal` view, along with the transaction details.
+
+Step 15: Last to Withdraw after second withdrawal<br>
+Use the `lastToWithdraw` function, found in the interactive section of our smart contract, to verify the last account to withdraw from the smart contract:
+
+![Last to Withdraw](Execution_Results/fifteen_last_to_withdraw.png)
+
+In the preceding image we can see that the last account to withdraw from the contract is the address ending in (...12c0).<br>
+You can verify this information through the sidebar, or the `terminal` view stating a successfull transaction. The last person to withdraw is, in fact, the last to person to whom we sent currency.
+
+Step 16: Last Withdrawal Amount after second withdrawal<br>
+Use the `lastWithdrawAmount` function, found in the interactive section of our smart contract, to verify that the last amount withdrawn matches the last amount sent to the specific address:
+
+![Last Withdrawal Amount](Execution_Results/sixteen_last_withdraw_amount.png)
+
+In the preceding image, we can see that under the `lastWithdrawAmount` function button, the value is 10000000000000000000. This means that we sent 10 ether to account2.<br>
+We can also verify the withdraw by using the `terminal` view. Here you can see the value of the withdrawal, as well as the account who received the funds.
+
+Great! It appears that our functions are doing exactly what we expect them to do. We are now able to fully interact with this `JointSavings` contract. 
