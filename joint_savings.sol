@@ -38,3 +38,8 @@ contract JointSavings {
     function deposit() public payable {
         contractBalance = address(this).balance;
     }
+
+    function setAccounts(address payable account1, address payable account2) public {
+        accountOne = account1;
+        accountTwo = account2;
+    }
