@@ -17,3 +17,9 @@ As mention in our `Technologies` section above, we don't have any libraries or d
 To use the Remix IDE, click on the link below:
 
 **[Remix IDE](https://remix.ethereum.org/)**
+
+---
+
+## Usage
+
+To use the 'Joint_Savings_Smart_Contract' application, simply clone the repository, open the file `joint_savings.sol` in the Remix IDE, and deploy via the Javascript Virtual Machine.
