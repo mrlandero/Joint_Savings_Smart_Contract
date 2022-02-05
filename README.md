@@ -165,3 +165,9 @@ Great! It appears that our functions are doing exactly what we expect them to do
 
 **Created by:** Tony Landero<br>
 **Email:** mr.landero@gmail.com<br>
+
+---
+
+## License
+
+MIT
